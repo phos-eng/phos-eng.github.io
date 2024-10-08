@@ -1,0 +1,46 @@
+#home {
+	background: white;
+	color: black;
+}
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+.navbar-brand {
+    display: flex;          
+    align-items: center;    
+    color: white;           
+    text-decoration: none;   
+}
+
+.title {
+    margin: 0;              
+}
+
+
+.logo {
+    margin-right: 10px;     
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
+h3 {
+    color: white;
+    transition: color 0.5s; /* Transição suave de 0.5 segundos */
+}
+
+h3:hover {
+    color: black; /* Cor preta ao passar o cursor */
+}
+

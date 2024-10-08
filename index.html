@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>PHOS - Instalações Elétricas</title>
+  </head>
+  <body>
+    
+    <header><!-- inicio Cabecalho -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+        <div class="container">
+          
+          <a href="#" class="navbar-brand">
+            <span class="logo"><img src="img/trovao.png" width="50" alt="Logo"></span>
+            <h3 class="title">PHOS Instalações Elétricas</h3>
+        </a>
+        
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+              <!--<li class="nav-item">
+                <a href="#servico" class="nav-link">Serviços</a>
+              </li>-->
+              <li class="nav-item">
+                <a href="quem_somos.html" class="nav-link">Quem Somos</a>
+              </li>
+              <li class="nav-item">
+                <a href="diferencial.html" class="nav-link">Diferecial</a>
+              </li>
+              <li class="nav-item">
+                <a href="clientes.html" class="nav-link">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a href="contato.html" class="btn btn-outline-light ml-4">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header><!--/fim Cabecalho -->
+
+    <section id="home"><!-- Início seção home -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex"><!-- Textos da seção -->
+            <div class="align-self-center">
+              <h1 class="display-4">Transformando Ideias em Energia !</h1>
+              <p>
+                Desenvolvemos projetos elétricos de alta qualidade, unindo expertise e inovação para garantir soluções eficientes e seguras para você.
+              </p>
+
+              <form class="mt-4 mb-4">
+                <div class="input-group input-group-lg">
+                    <input type="text" id="emailInput" placeholder="Seu e-mail" class="form-control">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-primary" onclick="submitEmail()">Orçamento</button>
+                    </div>
+                </div>
+            </form>
+            
+            <script>
+                function submitEmail() {
+                    const email = document.getElementById('emailInput').value;
+                    window.location.href = `contato.html?email=${encodeURIComponent(email)}`;
+                }
+            </script>
+            
+
+              <p>Nossas Redes 
+                  <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-dark">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </a>
+                <a href="https://www.instagram.com/eletrica_phos/" target="_blank" class="btn btn-outline-dark ml-2">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </p>
+
+            </div>
+          </div><!--/fim textos da seção -->
+          <div class="col-md-6 d-none d-md-block">
+            <img src="img/capa-mulher2.jpg" style="width: 518px; height: 518px;">
+          </div>
+        </div>
+      </div>
+    </section><!--/fim seção home -->
+
+    <section class="caixa"><!--/Início seção Residências -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2 id="servico">Instalações Elétricas Residenciais</h2>
+              <ul>
+                <li>Dimensionamento e instalação de quadros de distribuição</li>
+                <li>Fiação e cabeamento adequado às necessidades de cada ambiente</li>
+                <li>Instalação de dispositivos de proteção com disjuntores e DRS</li>
+                <li>Soluções de automação residencial para maior conforto e eficiência energética</li>
+            </ul>
+            
+              <a href="https://sebrae.com.br/sites/PortalSebrae/artigos/projeto-de-instalacao-eletrica-alem-de-necessario-garante-vantagens,9d6cc7c5a21d5810VgnVCM1000001b00320aRCRD" target="_blank" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/Instalacao-residencial.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção Residências -->
+
+    <section class="caixa"><!--/Início seção Industriais -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/instalacao-industrial.png" class="img-fluid">
+          </div>
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Instalações Elétricas Industriais</h2>
+              <ul>
+                <li>Projeto de energia para linhas de produção</li>
+                <li>Instalação de painéis de controle, quadros de comando e máquinas industriais</li>
+                <li>Manutenção preditiva, preventiva e corretiva para garantir a continuidade operacional</li>
+                <li>Otimização de sistemas elétricos industriais, garantindo eficiência e segurança</li>
+            </ul>
+            
+              <a href="eletrica_industrial.html" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção Industriais -->
+
+    <section class="caixa"><!--/Início seção Retrofit -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Retrofit Em Subestação</h2>
+              <ul>
+                <li>Análise e substituição de transformadores, painéis e equipamentos de proteção</li>
+                <li>Atualização de sistemas de proteção, controle e medição</li>
+                <li>Adequação as normas vigentes e otimização do consumo de energia</li>
+                <li>Aumento de carga, Modernização e Atualização de dijuntores de média tensão</li>
+                <li>Instalação e parametrização de relés de proteção</li>
+                <li>Correção de fator de potência, instalação de banco de capacitores</li>
+            </ul>
+            
+              <a href="retrofit.html"class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/retrofit-substacao.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção Retrofit -->
+
+    <section class="caixa"><!--/Início seção SPDA -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/sistema-protecao.png" class="img-fluid">
+          </div>
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Sistemas de Proteção Contra Descarga atmosférica SPDA</h2>
+              <ul>
+                <li>Projeto Personalizado, instalação de para-raios</li>
+                <li>condutores de descida e sistema de aterramento</li>
+                <li>Manutenção preditiva, preventiva e corretiva para garantir a continuidade operacional</li>
+                <li>Otimização de sistemas elétricos industriais, garantindo eficiência e segurança</li>
+            </ul>
+            
+              <a href="https://greenlegis.com.br/saiba-tudo-sobre-o-sistema-de-protecao-contra-descargas-atmosfericas-spda/" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção SPDA -->
+    
+    <section class="caixa"><!--/Início seção recursos -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/phos-logo.png" class="img-fluid">
+            <h4>Engenheiro responsável</h4>
+            <p>
+              Telefone: 21 969340672
+              E-mail: eduardoscardoso@live.com
+              Resp. Técnico: Eng. Eletricista
+              CREA-RJ Nº 2021104563.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/projeto.png" class="img-fluid">
+            <h4>Projetos Elétricos 3D</h4>
+            <p>
+              Diagramas unifilares, memorial descritivo e laudos técnicos. As-built
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/projetoCAD.png" class="img-fluid">
+            <h4>Projetos Elétricos BIM e CAD</h4>
+            <p>
+              Projetos para novas construções, reformas ou ampliações
+              Dimensionamento de cargas cabos e dispositivos de proteção
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção recursos -->
+
+    <footer class="mt-4 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              <!--<a href="#servico">Serviços</a>-->
+              <a href="quem_somos.html">Quem Somos</a>
+              <a href="diferencial.html">Difereciais</a>
+              <a href="clientes.html">Clientes</a>
+            </p>
+
+          </div>
+          <div class="col-md-4 d-flex justify-content-end">
+            <a href="https://www.facebook.com/marcio.duani" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <!--<a href="" class="btn btn-outline-dark ml-2">
+              <i class="fab fa-twitter"></i>
+            </a> -->
+            <a href="https://www.instagram.com/eletrica_phos/"  target="_blank" class="btn btn-outline-dark ml-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="btn btn-outline-dark ml-2">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
