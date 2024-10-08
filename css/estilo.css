@@ -41,11 +41,15 @@ h3 {
 }
 
 h3:hover {
-    color: yellow; /* Cor preta ao passar o cursor */
+    color: black; /* Cor preta ao passar o cursor */
 }
-@media (max-width: 576px) {
-    h1.display-4 {
-      font-size: 2rem;
-    }
+
+.bg-mais-escura {
+    background-color: rgb(20, 5, 0) !important; /* Preto puro */
   }
-  
+
+  .img-fixa {
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    height: 300px; /* Altura fixa para manter a consistência */
+    object-fit: cover; /* Corta a imagem para preencher a área */
+  }
