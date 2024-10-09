@@ -1,123 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+        /* Fundo preto para toda a página */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        /* Estilo da mensagem de agradecimento */
+        .agradecimento-container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
 
-    <title>PHOS - Instalações Elétricas</title>
-  </head>
-  <body>
-    
-    <header><!-- inicio Cabecalho -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-warning">
-        <div class="container">
-          
-          <a href="index.html" class="navbar-brand">
-            <span class="logo"><img src="img/trovao.png" width="50" alt="Logo"></span>
-            <h3 class="title">PHOS Instalações Elétricas</h3>
-        </a>
-        
+        h1 {
+            font-size: 2.5rem;
+            color: #FFD700; /* Cor dourada para destacar */
+            margin-bottom: 20px;
+        }
 
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #ccc;
+        }
 
-          <div class="collapse navbar-collapse" id="nav-principal">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="quem_somos.html" class="nav-link">Quem Somos</a>
-              </li>
-              <li class="nav-item">
-                <a href="diferencial.html" class="nav-link">Diferecial</a>
-              </li>
-              <li class="nav-item">
-                <a href="clientes.html" class="nav-link">Clientes</a>
-              </li>
-              <li class="nav-item">
-                <a href="contato.html" class="btn btn-outline-light ml-4">Contato</a>
-              </li>
-            </ul>
-          </div>
+        .btn-voltar {
+            margin-top: 30px;
+            font-size: 1.1rem;
+            color: #fff;
+            border: 2px solid #FFD700;
+            background-color: transparent;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
 
-        </div>
-      </nav>
-    </header><!--/fim Cabecalho -->
+        .btn-voltar:hover {
+            background-color: #FFD700;
+            color: #000;
+        }
+    </style>
+</head>
 
-    <section id="home"><!-- Início seção home -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-flex"><!-- Textos da seção -->
-            <div class="align-self-center">
-              <h1 class="display-4">Recebemos a sua menssagem !!</h1>
-              <p style="color: blue;">
-                Retornaremos com uma resposta em breve, muito obrigado.
-              </p>
-
-              <p>Nossas Redes 
-                  <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-dark">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </a>
-                <a href="https://www.instagram.com/eletrica_phos/" target="_blank" class="btn btn-outline-dark ml-2">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </p>
-
-            </div>
-          </div><!--/fim textos da seção -->
-          <div class="col-md-6 d-none d-md-block">
-            <img src="img/capa-mulher2.jpg" style="width: 518px; height: 518px;">
-          </div>
-        </div>
-      </div>
-    </section><!--/fim seção home -->
-
-    
-    <footer class="mt-4 mb-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <p>
-              <!--<a href="#servico">Serviços</a>-->
-              <a href="quem_somos.html">Quem Somos</a>
-              <a href="diferencial.html">Difereciais</a>
-              <a href="clientes.html">Clientes</a>
-            </p>
-
-          </div>
-          <div class="col-md-4 d-flex justify-content-end">
-            <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-dark">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <!--<a href="" class="btn btn-outline-dark ml-2">
-              <i class="fab fa-twitter"></i>
-            </a> -->
-            <a href="https://www.instagram.com/eletrica_phos/"  target="_blank" class="btn btn-outline-dark ml-2">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" class="btn btn-outline-dark ml-2">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+<body>
+    <div class="agradecimento-container">
+        <h1>Obrigado pelo seu contato!</h1>
+        <p>
+            Agradecemos por nos enviar sua mensagem. Sua comunicação é muito importante e em breve entraremos
+            em contato.
+        </p>
+        <p>
+            Enquanto isso, fique à vontade para explorar mais sobre nossos serviços e produtos. Estamos aqui para te
+            ajudar!
+        </p>
+        <a href="index.html" class="btn btn-voltar">Voltar para a Página Inicial</a>
+    </div>
 
     <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
