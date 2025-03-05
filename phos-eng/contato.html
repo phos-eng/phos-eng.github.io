@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <!-- Estilo customizado -->
+    <style>
+        /* Configuração para o modo escuro */
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formulario-container {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        label {
+            color: #bbb;
+        }
+
+        input, textarea {
+            background-color: #2c2c2c;
+            color: #fff;
+            border: 1px solid #555;
+            padding: 10px;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #888;
+        }
+
+        button {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #FFC107;
+        }
+
+        /* Estilo para o botão de fechar */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #FFD700;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: #FFC107;
+        }
+    </style>
+
+    <title>Formulário de Contato - Dark Mode</title>
+</head>
+
+<body>
+    <div class="formulario-container">
+        <span class="close-btn">&times;</span> <!-- Botão de fechar -->
+        <h2>Formulário de Contato</h2>
+        <form id="meuForm" action="https://formsubmit.co/eduardoscardoso@live.com" method="POST" class="form"
+            onsubmit="validarFormulario(event)">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Seu e-mail" required />
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" class="form-control" placeholder="Ex: 2193689581" />
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" class="form-control" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_next" value="https://phos-eng.github.io/obrigado.html" />
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault(); // Evita o envio do formulário para validação
+
+            const nome = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone') ? document.getElementById('telefone').value : '';
+            const mensagem = document.getElementById('message').value;
+
+            // Validação do nome
+            if (nome.length < 3 || nome.length > 15) {
+                alert('O nome deve ter entre 3 e 15 caracteres.');
+                return;
+            }
+
+            // Validação do email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um email válido.');
+                return;
+            }
+
+            // Validação do telefone
+            if (telefone) {
+                const telefoneRegex = /^\d{11}$/;
+                if (!telefoneRegex.test(telefone)) {
+                    alert('O telefone deve seguir o padrão: 21993689581');
+                    return;
+                }
+            }
+
+            // Enviar o formulário se as validações passarem
+            document.getElementById('meuForm').submit();
+        }
+
+        // Função para fechar o formulário e redirecionar para a página principal
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            window.location.href = "index.html"; // Redireciona para a página principal
+        });
+
+    // Função para obter o e-mail da URL e preenchê-lo no campo de e-mail
+    window.onload = function () {
+        const params = new URLSearchParams(window.location.search);
+        const email = params.get('email');
+        if (email) {
+            document.getElementById('email').value = email;
+        }
+    };
+</script>
+    </script>
+</body>
+
+</html>

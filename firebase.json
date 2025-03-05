@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "phos-eng",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
